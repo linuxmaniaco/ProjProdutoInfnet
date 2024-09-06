@@ -1,4 +1,7 @@
-INSERT INTO PRODUTO(codigo, preco, descricao, estoque) VALUES (1,5,'papel foto',true);
-INSERT INTO PRODUTO(codigo, preco, descricao, estoque) VALUES (2,5,'papel cartao',true);
-INSERT INTO PRODUTO(codigo, preco, descricao, estoque) VALUES (3,1,'papel envelope',true);
-INSERT INTO PRODUTO(codigo, preco, descricao, estoque) VALUES (4,5,'papel fotoadesivo',true);
+INSERT INTO PRODUTO(codigo, preco, descricao, estoque, marca, tipomercadoria, detalhe, alimento, vendedor_id, nomevendedor) VALUES (1,5,'papel foto',true,'susano','papelaria','Fotografico gloss',false, 1, 'Eduardo');
+INSERT INTO PRODUTO(codigo, preco, descricao, estoque, marca, tipoMercadoria, detalhe, alimento, vendedor_id, nomeVendedor) VALUES (2,5,'papel cartao',true,'papelex','papelaria','Papel cartão',false, 1, 'Eduardo');
+INSERT INTO PRODUTO(codigo, preco, descricao, estoque, marca, tipoMercadoria, detalhe, alimento, vendedor_id, nomeVendedor) VALUES (3,1,'papel envelope',true,'kraft','papelaria','Envelope pardo',false, 2, 'Gleiciley');
+INSERT INTO PRODUTO(codigo, preco, descricao, estoque, marca, tipoMercadoria, detalhe, alimento, vendedor_id, nomeVendedor) VALUES (4,5,'papel fotoadesivo',true,'report','papelaria','Fotografico gloss',false, 3, 'Erika');
+INSERT INTO PRODUTO(codigo, preco, descricao, estoque, marca, tipoMercadoria, detalhe, alimento, vendedor_id, nomeVendedor) VALUES (5,3.5,'Fofura',true,'Biscoito','alimento','Biscoito fofura',true, 1, 'Eduardo');
+INSERT INTO PRODUTO(codigo, preco, descricao, estoque, marca, tipoMercadoria, detalhe, alimento, vendedor_id, nomeVendedor) VALUES (6,2,'Guaracamp',true,'Bebida','alimento','Bebida doce',true, 1, 'Eduardo');
+INSERT INTO PRODUTO(codigo, preco, descricao, estoque, marca, tipoMercadoria, detalhe, alimento, vendedor_id, nomeVendedor) VALUES (7,2.5,'pe de moleque',true,'tomy','alimento','Calda com amendoim',true, 3, 'Erika');
