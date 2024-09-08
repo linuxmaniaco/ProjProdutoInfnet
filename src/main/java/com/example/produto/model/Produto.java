@@ -32,4 +32,5 @@ public class Produto {
     private boolean alimento;
     private Integer vendedor_id;
     private String nomevendedor;
+    private String estadocomprador;
 }
