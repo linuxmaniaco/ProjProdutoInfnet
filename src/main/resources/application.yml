@@ -26,3 +26,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      avaliacaoService:
+        register-health-indicator: true
+        minimum-number-of-calls: 1
+        sliding-window-size: 3
+        wait-duration-in-open-state:
+          seconds: 1000
