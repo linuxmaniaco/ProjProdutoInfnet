@@ -1,10 +1,6 @@
-app:
-  myport: ${PORT:0}
 server:
-  port: ${app.myport}
+  port: 8080
 spring:
-  profiles:
-    active: docker
   application:
     name: produto-service
   main:
@@ -12,7 +8,7 @@ spring:
   datasource:
     url: jdbc:h2:mem:produto
     username: sa
-    password: #${SENHA_BANCO}
+    password:
     driver-class-name: org.h2.Driver
   h2:
     console:
@@ -27,4 +23,4 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://EUREKA-SERVER:8761/eureka/
