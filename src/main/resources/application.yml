@@ -12,7 +12,7 @@ spring:
 #  datasource:
 #    url: jdbc:h2:mem:produto
 #    username: sa
-#    password: #${SENHA_BANCO}
+#    password:
 #    driver-class-name: org.h2.Driver
 #  h2:
 #    console:
