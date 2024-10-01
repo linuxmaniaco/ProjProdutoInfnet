@@ -9,18 +9,33 @@ spring:
     name: produto-service
   main:
     allow-bean-definition-overriding: true
+#  datasource:
+#    url: jdbc:h2:mem:produto
+#    username: sa
+#    password: #${SENHA_BANCO}
+#    driver-class-name: org.h2.Driver
+#  h2:
+#    console:
+#      enabled: true
+#  jpa:
+#    show-sql: true
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    defer-datasource-initialization: true
+
   datasource:
-    url: jdbc:h2:mem:produto
-    username: sa
-    password: #${SENHA_BANCO}
-    driver-class-name: org.h2.Driver
-  h2:
-    console:
-      enabled: true
+    #    url: jdbc:mysql://localhost:3306/produto
+    url: jdbc:mysql://mysql-server:3306/produto
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
+    hibernate:
+      ddl-auto: create
     show-sql: true
-    database-platform: org.hibernate.dialect.H2Dialect
     defer-datasource-initialization: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
 
 eureka:
   instance:
